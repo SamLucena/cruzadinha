@@ -1,3 +1,5 @@
+const palavraDma = document.getElementsByClassName('dma');
+
 
 var listaRespostas = [
     {
@@ -6,7 +8,7 @@ var listaRespostas = [
     },
     {
         pergunta: 2,
-        resposta: "rom"
+        resposta: "cache"
     },
     {
         pergunta: 3,
@@ -14,8 +16,49 @@ var listaRespostas = [
     },
     {
         pergunta: 4,
+        resposta: "databus"
+    },
+    {
+        pergunta: 5,
+        resposta: "massa"
+    },
+    {
+        pergunta: 6,
+        resposta: "threads"
+    },
+    {
+        pergunta: 7,
+        resposta: "eprom"
+    },
+    {
+        pergunta: 8,
         resposta: "cpu"
     },
+    {
+        pergunta: 9,
+        resposta: "dualcore"
+    },
+    {
+        pergunta: 10,
+        resposta: "cs"
+    },
+    {
+        pergunta: 11,
+        resposta: "rom"
+    },
+    {
+        pergunta: 12,
+        resposta: "registradores"
+    },
+    {
+        pergunta: 13,
+        resposta: "ula"
+    },
+    {
+        pergunta: 14,
+        resposta: "ram"
+    },
+    
 ]
 
 function validar(elemento, pergunta){
@@ -25,9 +68,18 @@ function validar(elemento, pergunta){
             elemento.style.borderColor = "green";
             elemento.style.color = "green";
             elemento.disabled = true;
+            window.location = "#cruzadinha";
+            montarPalavra(resposta, pergunta);
             return;
         }
     }
     elemento.style.borderColor = "red";
     elemento.style.color = "red";
+}
+
+
+function montarPalavra(resposta, pergunta){
+    if(pergunta == 1){
+        console.log(palavraDma);
+    }
 }

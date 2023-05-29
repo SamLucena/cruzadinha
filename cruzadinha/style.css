@@ -108,5 +108,15 @@
     width: 30px;
     text-align: center;
     transition: 0.8s;
-    opacity: 5;
+    opacity: 0;
+}
+
+.numero{
+    font-size: 24px;
+    color: black;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    transition: 0.8s;
+    opacity: .5;
 }
