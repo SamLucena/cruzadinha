@@ -1,9 +1,8 @@
-const massa = document.getElementById('massa');
 
 var listaRespostas = [
     {
         pergunta: 1,
-        resposta: "massa"
+        resposta: "dma"
     },
     {
         pergunta: 2,
