@@ -5,19 +5,30 @@ var listaRespostas = [
         pergunta: 1,
         resposta: "massa"
     },
-    "rom",
-    "flash",
-    "cpu"
+    {
+        pergunta: 2,
+        resposta: "rom"
+    },
+    {
+        pergunta: 3,
+        resposta: "flash"
+    },
+    {
+        pergunta: 4,
+        resposta: "cpu"
+    },
 ]
 
-function validar(resposta, pergunta){
+function validar(elemento, pergunta){
+    var resposta = elemento.value;
     for(let i = 0; i < listaRespostas.length; i++){
-        if(resposta == listaRespostas[i]){
-            massa.style.borderColor = "green";
-            massa.style.color = "green";
+        if(resposta.toLowerCase() == listaRespostas[i].resposta && pergunta == listaRespostas[i].pergunta){
+            elemento.style.borderColor = "green";
+            elemento.style.color = "green";
+            elemento.disabled = true;
             return;
         }
     }
-    massa.style.borderColor = "red";
-    massa.style.color = "red";
+    elemento.style.borderColor = "red";
+    elemento.style.color = "red";
 }
