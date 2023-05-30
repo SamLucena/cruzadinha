@@ -13,1461 +13,1467 @@
     <title>Cruzadinha</title>
 </head>
 
-<body class="container">
-    <div class="form">
-        <p class="form-title">Palavras Cruzadas!</p>
-        <div class="form-content">
-            <span>1. Método pelo qual periféricos como placas de som, placas de rede e discos de armazenamento acessam e transferem diretamente os dados que precisam enviar ou receber sem utilizar a CPU.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="dmas" type="text">
+<body>
+    <div class="container">
+        <div class="form">
+            <p class="form-title">Perguntas!</p>
+            <div class="form-content">
+                <span>1. Método pelo qual periféricos como placas de som, placas de rede e discos de armazenamento acessam e transferem diretamente os dados que precisam enviar ou receber sem utilizar a CPU.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="dmas" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(dmas, 1)">Validar</button>
                 </div>
-                <button class="submit" onclick="validar(dmas, 1)">Validar</button>
+            </div>
+            <div class="form-content">
+                <span>2. Onde os dados são armazenados de forma temporária e podem ser deletados a qualquer momento, ampliando assim o armazenamento interno do smartphone.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="cache" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(cache, 2)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>3. Quando alguém faz um update no firmware do celular, que é uma EEPROM, pode se referir ao processo como "flashear".</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="flash" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(flash, 3)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>4. Sistema dentro de um computador ou dispositivo, consistindo em um conector ou conjunto de fios, que fornece transporte de dados.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="databus" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(databus, 4)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>5. Tem como função armazenar grandes quantidades de informações.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="massa" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(massa, 5)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>6. É como um subsistema dentro do processador, onde os processos irão se dividir em duas ou mais tarefas.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="threads" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(threads, 6)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>7. Rom que pode ser reescrita.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="eprom" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(eprom, 7)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>8. É o local onde os dados são processados, executando cálculos de forma centralizada.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="cpu" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(cpu, 8)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>9. É como se ele tivesse dois cérebros trabalhando ao mesmo tempo.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="dualcore" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(dualcore, 9)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>10. Mecanismo fundamental para permitir à CPU acessar memórias e/ou periféricos externos.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="cs" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(cs, 10)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>11. Armazena BIOS do computador.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="rom" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(rom, 11)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>12. Circuitos digitais capazes de armazenar e deslocar informações binárias.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="registradores" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(registradores, 12)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>13. Responsável por realizar operações lógicas e aritméticas.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="ula" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(ula, 13)">Validar</button>
+                </div>
+            </div>
+            <div class="form-content">
+                <span>14. Responsável pelo armazenamento de informações necessárias para a execução de aplicativos em uso e para o funcionamento do próprio sistema operacional.</span>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input id="ram" type="text">
+                    </div>
+                    <button class="submit" onclick="validar(ram, 14)">Validar</button>
+                </div>
             </div>
         </div>
-        <div class="form-content">
-            <span>2. Onde os dados são armazenados de forma temporária e podem ser deletados a qualquer momento, ampliando assim o armazenamento interno do smartphone.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="cache" type="text">
-                </div>
-                <button class="submit" onclick="validar(cache, 2)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>3. Quando alguém faz um update no firmware do celular, que é uma EEPROM, pode se referir ao processo como "flashear".</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="flash" type="text">
-                </div>
-                <button class="submit" onclick="validar(flash, 3)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>4. Sistema dentro de um computador ou dispositivo, consistindo em um conector ou conjunto de fios, que fornece transporte de dados.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="databus" type="text">
-                </div>
-                <button class="submit" onclick="validar(databus, 4)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>5. Tem como função armazenar grandes quantidades de informações.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="massa" type="text">
-                </div>
-                <button class="submit" onclick="validar(massa, 5)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>6. É como um subsistema dentro do processador, onde os processos irão se dividir em duas ou mais tarefas.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="threads" type="text">
-                </div>
-                <button class="submit" onclick="validar(threads, 6)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>7. Rom que pode ser reescrita.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="eprom" type="text">
-                </div>
-                <button class="submit" onclick="validar(eprom, 7)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>8. É o local onde os dados são processados, executando cálculos de forma centralizada.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="cpu" type="text">
-                </div>
-                <button class="submit" onclick="validar(cpu, 8)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>9. É como se ele tivesse dois cérebros trabalhando ao mesmo tempo.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="dualcore" type="text">
-                </div>
-                <button class="submit" onclick="validar(dualcore, 9)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>10. Mecanismo fundamental para permitir à CPU acessar memórias e/ou periféricos externos.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="cs" type="text">
-                </div>
-                <button class="submit" onclick="validar(cs, 10)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>11. Armazena BIOS do computador.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="rom" type="text">
-                </div>
-                <button class="submit" onclick="validar(rom, 11)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>12. Circuitos digitais capazes de armazenar e deslocar informações binárias.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="registradores" type="text">
-                </div>
-                <button class="submit" onclick="validar(registradores, 12)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>13. Responsável por realizar operações lógicas e aritméticas.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="ula" type="text">
-                </div>
-                <button class="submit" onclick="validar(ula, 13)">Validar</button>
-            </div>
-        </div>
-        <div class="form-content">
-            <span>14. Responsável pelo armazenamento de informações necessárias para a execução de aplicativos em uso e para o funcionamento do próprio sistema operacional.</span>
-            <div class="form-group">
-                <div class="input-container">
-                    <input id="ram" type="text">
-                </div>
-                <button class="submit" onclick="validar(ram, 14)">Validar</button>
-            </div>
+        <div class="crosswords" id="cruzadinha">
+            <h1>Cruzadinha</h1>
+    
+            <table class="tabelas">
+                <tr>
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo">
+                        </div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">1.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="nulo">
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">2.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+    
+                <tr>
+                    <!-- primeira linha -->
+                    <!-- coluna 1 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">3.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="1x7" class="letra dma">D</div>
+                        </div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="1x9" class="letra cache">C</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 2 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="2x2" class="letra flash">F</div>
+                        </div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">4.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="2x7" class="letra dma">M</div>
+                        </div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="2x9" class="letra cache">A</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 3 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="3x2" class="letra flash">L</div>
+                        </div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">9.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="3x5" class="letra databus dualcore">D</div>
+                        </div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="blocoResposta">
+                            <div id="3x6" class="letra dualcore">U</div>
+                        </div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="3x7" class="letra dma dualcore">A</div>
+                        </div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="3x8" class="letra dualcore">L</div>
+                        </div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="3x9" class="letra cache dualcore">C</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="3x10" class="letra dualcore">O</div>
+                        </div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="3x11" class="letra dualcore">R</div>
+                        </div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="3x12" class="letra dualcore">E</div>
+                        </div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 4 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="numeracao">
+                            <div class="numero">5.</div>
+                        </div>
+                    </td>
+                     <td>
+                        <div class="blocoResposta">
+                            <div id="4x1" class="letra massa">M</div>
+                        </div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="4x2" class="letra flash massa">A</div>
+                        </div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="4x3" class="letra massa">S</div>
+                        </div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="4x4" class="letra massa">S</div>
+                        </div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="4x5" class="letra databus massa">A</div>
+                        </div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="4x9" class="letra cache">H</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">11.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 5 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="5x2" class="letra flash">S</div>
+                        </div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="5x5" class="letra databus">T</div>
+                        </div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">7.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="5x9" class="letra cache eprom">E</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="5x10" class="letra eprom">P</div>
+                        </div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="5x11" class="letra eprom rom">R</div>
+                        </div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="5x12" class="letra eprom">O</div>
+                        </div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="5x13" class="letra eprom">M</div>
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 6 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="numeracao">
+                            <div class="numero">6.</div>
+                        </div>
+                    </td>
+                     <td>
+                        <div class="blocoResposta">
+                            <div id="6x1" class="letra threads">T</div>
+                        </div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="6x2" class="letra flash threads">H</div>
+                        </div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="6x3" class="letra threads">R</div>
+                        </div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="6x4" class="letra threads">E</div>
+                        </div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="6x5" class="letra databus threads">A</div>
+                        </div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="blocoResposta">
+                            <div id="6x6" class="letra threads">D</div>
+                        </div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="6x7" class="letra threads">S</div>
+                        </div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">12.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="6x11" class="letra rom">O</div>
+                        </div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 7 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">10.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="7x5" class="letra databus">B</div>
+                        </div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">14.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="7x9" class="letra registradores ram">R</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="7x10" class="letra ram">A</div>
+                        </div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="7x11" class="letra rom ram">M</div>
+                        </div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 8 -->
+                    <!-- coluna 1 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="numeracao">
+                            <div class="numero">8.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="8x3" class="letra cpu cs">C</div>
+                        </div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="8x4" class="letra cpu">P</div>
+                        </div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="8x5" class="letra databus cpu">U</div>
+                        </div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="8x9" class="letra registradores">E</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 9 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="9x3" class="letra cs">S</div>
+                        </div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="9x5" class="letra databus">S</div>
+                        </div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="9x9" class="letra registradores">G</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 10 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="10x9" class="letra registradores">I</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 11 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="11x9" class="letra registradores">S</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 12 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="12x9" class="letra registradores">T</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 13 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="13x9" class="letra registradores">R</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 14 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="numeracao">
+                            <div class="numero">13.</div>
+                        </div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="14x7" class="letra ula">U</div>
+                        </div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="14x8" class="letra ula">L</div>
+                        </div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="14x9" class="letra registradores ula">A</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 15 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="15x9" class="letra registradores">D</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 16 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="16x9" class="letra registradores">O</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 17 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="17x9" class="letra registradores">R</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 18 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="18x9" class="letra registradores">E</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <!-- linha 19 -->
+                     <!-- coluna 1 -->
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                     <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 2 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 3 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 4 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 5 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 6 -->
+                    <td>    
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 7 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 8 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 9 -->
+                    <td>
+                        <div class="blocoResposta">
+                            <div id="19x9" class="letra registradores">S</div>
+                        </div>
+                    </td>
+                    <!-- coluna 10 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 11 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 12 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                    <!-- coluna 13 -->
+                    <td>
+                        <div class="nulo"></div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
-    <div class="crosswords" id="cruzadinha">
-        <h1>Cruzadinha</h1>
 
-        <table class="tabelas">
-            <tr>
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo">
-                    </div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">1.</div>
-                    </div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="nulo">
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">2.</div>
-                    </div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-
-            <tr>
-                <!-- primeira linha -->
-                <!-- coluna 1 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">3.</div>
-                    </div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="1x7" class="letra dma">D</div>
-                    </div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="1x9" class="letra cache">C</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 2 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="2x2" class="letra flash">F</div>
-                    </div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">4.</div>
-                    </div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="2x7" class="letra dma">M</div>
-                    </div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="2x9" class="letra cache">A</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 3 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="3x2" class="letra flash">L</div>
-                    </div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">9.</div>
-                    </div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="3x5" class="letra databus dualcore">D</div>
-                    </div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="blocoResposta">
-                        <div id="3x6" class="letra dualcore">U</div>
-                    </div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="3x7" class="letra dma dualcore">A</div>
-                    </div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="3x8" class="letra dualcore">L</div>
-                    </div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="3x9" class="letra cache dualcore">C</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="3x10" class="letra dualcore">O</div>
-                    </div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="3x11" class="letra dualcore">R</div>
-                    </div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="3x12" class="letra dualcore">E</div>
-                    </div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 4 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="numeracao">
-                        <div class="numero">5.</div>
-                    </div>
-                </td>
-                 <td>
-                    <div class="blocoResposta">
-                        <div id="4x1" class="letra massa">M</div>
-                    </div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="4x2" class="letra flash massa">A</div>
-                    </div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="4x3" class="letra massa">S</div>
-                    </div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="4x4" class="letra massa">S</div>
-                    </div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="4x5" class="letra databus massa">A</div>
-                    </div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="4x9" class="letra cache">H</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">11.</div>
-                    </div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 5 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="5x2" class="letra flash">S</div>
-                    </div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="5x5" class="letra databus">T</div>
-                    </div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">7.</div>
-                    </div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="5x9" class="letra cache eprom">E</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="5x10" class="letra eprom">P</div>
-                    </div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="5x11" class="letra eprom rom">R</div>
-                    </div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="5x12" class="letra eprom">O</div>
-                    </div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="5x13" class="letra eprom">M</div>
-                    </div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 6 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="numeracao">
-                        <div class="numero">6.</div>
-                    </div>
-                </td>
-                 <td>
-                    <div class="blocoResposta">
-                        <div id="6x1" class="letra threads">T</div>
-                    </div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="6x2" class="letra flash threads">H</div>
-                    </div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="6x3" class="letra threads">R</div>
-                    </div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="6x4" class="letra threads">E</div>
-                    </div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="6x5" class="letra databus threads">A</div>
-                    </div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="blocoResposta">
-                        <div id="6x6" class="letra threads">D</div>
-                    </div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="6x7" class="letra threads">S</div>
-                    </div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">12.</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="6x11" class="letra rom">O</div>
-                    </div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 7 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">10.</div>
-                    </div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="7x5" class="letra databus">B</div>
-                    </div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">14.</div>
-                    </div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="7x9" class="letra registradores ram">R</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="7x10" class="letra ram">A</div>
-                    </div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="7x11" class="letra rom ram">M</div>
-                    </div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 8 -->
-                <!-- coluna 1 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="numeracao">
-                        <div class="numero">8.</div>
-                    </div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="8x3" class="letra cpu cs">C</div>
-                    </div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="8x4" class="letra cpu">P</div>
-                    </div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="8x5" class="letra databus cpu">U</div>
-                    </div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="8x9" class="letra registradores">E</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 9 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="9x3" class="letra cs">S</div>
-                    </div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="9x5" class="letra databus">S</div>
-                    </div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="9x9" class="letra registradores">G</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 10 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="10x9" class="letra registradores">I</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 11 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="11x9" class="letra registradores">S</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 12 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="12x9" class="letra registradores">T</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 13 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="13x9" class="letra registradores">R</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 14 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="numeracao">
-                        <div class="numero">13.</div>
-                    </div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="14x7" class="letra ula">U</div>
-                    </div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="14x8" class="letra ula">L</div>
-                    </div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="14x9" class="letra registradores ula">A</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 15 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="15x9" class="letra registradores">D</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 16 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="16x9" class="letra registradores">O</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 17 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="17x9" class="letra registradores">R</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 18 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="18x9" class="letra registradores">E</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <!-- linha 19 -->
-                 <!-- coluna 1 -->
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                 <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 2 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 3 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 4 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 5 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 6 -->
-                <td>    
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 7 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 8 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 9 -->
-                <td>
-                    <div class="blocoResposta">
-                        <div id="19x9" class="letra registradores">S</div>
-                    </div>
-                </td>
-                <!-- coluna 10 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 11 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 12 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-                <!-- coluna 13 -->
-                <td>
-                    <div class="nulo"></div>
-                </td>
-            </tr>
-        </table>
-    </div>
+    <footer>
+        <h2>Copyright &copy; | Criadores: Julia Matos, Khauane Guilhermino e Samuel Lucena.</h2>
+    </footer> 
 </body>
 
 </html>

@@ -2,6 +2,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+}
+
 .container{
     display: flex;
     width: 100%;
@@ -9,8 +17,6 @@
     align-items: center;
     overflow-x: hidden;
     gap: 50px;
-    padding: 1rem;
-    background-color: #e5e7eb;
 }
 
 .form {
@@ -79,6 +85,10 @@
     height: 900px;
     border-radius: 0.5rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding-top: 10px;
+}
+.crosswords h1{
+    text-align: center;
 }
 
 .table {
@@ -121,4 +131,15 @@
     text-align: center;
     transition: 0.8s;
     opacity: .5;
+}
+
+footer{
+    background-color: purple;
+    height: 50px; 
+    margin-top: 25px;
+}
+footer h2{
+    font-size: 15px;
+    text-align: center;
+    color: white;
 }
